@@ -1,0 +1,11 @@
+.search-filter {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.search-filter input {
+  width: 24%;
+  height: 26px;
+}

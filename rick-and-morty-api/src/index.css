@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'getSchwifty';
+    src:
+        url('asseyts/statics/fonts/getSchwifty.ttf') format('truetype'),
+        url('asseyts/statics/fonts/getschwifty-webfont.woff2') format('woff2'),
+        url('asseyts/statics/fonts/getschwifty-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.theme-dark {
+    background-color: #191e2c;
+    color: #fff;
+}
+
+.theme-light {
+    background-color: #fff;
+}
+
+.Home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.character {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.character h3 {
+    font-size: 1.5rem;
+}
+
+.character__container {
+    grid-template-columns: repeat(auto-fill, minmax(274px, 1fr));
+    display: grid;
+    gap: 1.5em 3.5em;
+}
+
+.character-item {
+    display: inline-block;
+}
+
+.character-item img {
+    border-radius: 100%;
+}
+
+.character-item h3 {
+    text-align: center;
+}
+
+.character__img-container {
+    position: relative;
+}
+
+.character__img-container button {
+    position: absolute;
+    bottom: 20px;
+    right: 6em;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: unset;
+    color: red;
+    transition: all .2s ease-in-out;
+}
+
+.character__img-container button:hover {
+    transform: scale(2);
+}
